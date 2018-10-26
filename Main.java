@@ -278,7 +278,22 @@ class Main
          * Task 11.  Reverse the order of elements in ar2
          */
         System.out.println("***Task 11***");
+       
+        for (int i=0 ; i<ar2.length ; i++)
+            System.out.println("ar2["+i+"] = "+ar2[i]);
+            
+        int[] b=new int[ar2.length];
+       for (int i=0 ; i<ar2.length ; i++)
+       {
+           b[ar2.length-1-i]=ar2[i];
+        }
+        for (int i=0 ; i<ar2.length ; i++)
+        {
+            ar2[i]=b[i];
+        }
         
+        for (int i=0 ; i<ar2.length ; i++)
+            System.out.println("ar2["+i+"] = "+ar2[i]);
         
         
         /*
@@ -327,11 +342,13 @@ class Main
         for (int i=0; i<ar6.length; i++)
             ar6[i] = ar5[i].length();
         k=0;
-        for (ar5;i<ar6.length; i++)
-            
+        for (int i=0;i<ar6.length; i++)
+            if (ar6[i]>=5)    
+                k++;
+        for (int i=0; i<ar6.length; i++)
+        System.out.println("There are " + k + " words that have 5 or more letters");
         
-        
-        
+         
     
         /*
          * Task 13
@@ -347,6 +364,12 @@ class Main
          * Use a for loop to print out the names of monster that start with
          * a vowel
          */
+        System.out.println("***Task 13***");
+        String[] monsterArray;
+        String[] monsterArray = new String[5];
+        
+        
+        
         
          /*
           * Task 14
